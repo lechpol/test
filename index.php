@@ -12,8 +12,10 @@ require_once 'vendor/Employee.php';
 echo 'Hubert';
 spl_autoload_register('AutoLoder');
 /**
+ *
  * @param $className
  */
+
 function AutoLoader($className)
 {
     $class= str_replace('\\', DIRECTORY_SEPARATOR, $className);
